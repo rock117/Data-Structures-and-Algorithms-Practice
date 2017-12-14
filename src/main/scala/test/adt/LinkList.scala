@@ -1,7 +1,7 @@
 package test.adt
 
 private case class Node[Data](data: Data, var next: Node[Data])
-class LinkList[Data]() {
+class LinkList[Data] {
 
     private var head: Node[Data] = null;
     private var current: Node[Data] = null;
