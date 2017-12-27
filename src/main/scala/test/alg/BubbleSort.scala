@@ -2,6 +2,12 @@ package test.alg
 
 import scala.util.Random
 
+/**
+  * 冒泡排序:时间复杂度 O(n2)
+  * 算法流程:
+  * 1. 从索引0处，比较相邻元素，如果当前索引处i的值小于i+1的值，则交换位置，此轮过后，最大值处于 n-1索引处
+  * 2. 重复执行1， 最大值处于 n-1 - m索引处,直到　n-1－ｍ　＝　０
+  */
 object BubbleSort extends App {
     val arr = (1 to 100).map(i => Random.nextInt().abs % 100).toArray
     sort(arr)
